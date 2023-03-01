@@ -1,0 +1,49 @@
+<%- include("partials/header.ejs"); %>
+
+
+    <div class="row col-10 mx-auto">
+        <div class="card mb-3 col-md-6 col-sm-12">
+            <div class="row g-0">
+                <div class="card-body">
+                    <h2 class="card-title">Login with Email & Password</h2>
+                    <form class="form-control col-md-6" action="/login" method="POST">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username:</label>
+                            <input type="text" class="form-control" id="username" name="username" minlength="5"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="password" name="password" minlength="8"
+                                required>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-outline-success search-btn login-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 col-md-6 col-sm-12">
+            <div class="row g-0">
+                <div class="card-body">
+                    <h2 class="card-title">Login with Google</h2>
+                    <a type="button" href="/auth/google"
+                        class="btn btn-outline-success social-logins p-2 pt-3">
+                        <img src="images/google-icon.png" alt="">&emsp;&emsp;<span>Login With Google</span>
+                    </a>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="card-body">
+                    <a type="button" href="/signup" class="nav-link logins-link active p-2 mb-5">
+                        New to Gym Buddy? Signup Now!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <%- include("partials/footer.ejs"); %>

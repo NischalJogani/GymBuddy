@@ -1,0 +1,170 @@
+body {
+    background-color: #dcfceb;
+    color: #1c9d7e;
+    font-family: 'Tilt Neon', cursive;
+    font-size: 1.5em;
+    font-weight: 600;
+    overflow-x: hidden;
+}
+
+table,
+th,
+td {
+    border: 1px solid #fff;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    background-color: #1c9d7e;
+    color: #dcfceb !important;
+}
+
+td {
+    font-size: 1.3vw !important;
+}
+
+.navbar {
+    background-color: #1c9d7e !important;
+    width: 100%;
+}
+
+.navbar-brand, .nav-link, .nav-icons {
+    color: #dcfceb !important;
+}
+
+.brand-logo {
+    width: 55px;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    width: auto;
+    font-family: 'Unica One', cursive;
+}
+
+.nav-icons {
+    font-size: 1.2em;
+}
+
+.nav-link.active {
+    font-size: 0.85em;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.home-img {
+    width: 65%;
+    border-radius: 10%;
+    transform: rotate(8deg);
+}
+
+.home-brand {
+    font-size: 8vw;
+    width: auto;
+    font-family: 'Unica One', cursive;
+    font-weight: 800;
+    margin-left: -0.5vw;
+}
+
+.home-description {
+    font-size: 2vw;
+}
+
+.home-sub-description {
+    font-size: 1.2vw;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-control:focus {
+    outline: 0;
+    border-color: #5cb85c;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(92, 184, 92, .6);
+}
+
+.data-submit {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #5cb85c;
+    border: 1px solid #5cb85c;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: all .15s ease-in-out;
+    width: 100%;
+}
+
+.data-submit:hover {
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.text-decoration-none {
+    color: #1c9d7e;
+    font-family: 'Tilt Neon', cursive;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.text:hover {
+    color: #1c9d7e;
+}
+
+.nav-link.logins-link {
+    color: #1c9d7e !important;
+}
+
+.social-logins span {
+    font-size: 2em;
+}
+
+.social-logins {
+    width: 100%;
+}
+
+.dropdown-list {
+    font-size: 1em;
+    font-weight: 400;
+    white-space: nowrap;
+    color: #1c9d7e;
+    font-weight: 800 !important;
+}
+
+.card-text {
+    font-weight: 800;
+}
+
+.profile-body {
+    width: fit-content;
+}

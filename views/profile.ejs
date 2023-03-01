@@ -1,0 +1,97 @@
+<%- include('partials/header') %>
+
+
+    <div class="row">
+        <div class="card mb-3 col-lg-8 profile col-sm-12 mx-auto">
+            <div class="row g-0" style="margin: 2em 5em !important;">
+                <div class="col-md-5">
+                    <img src="https://drive.google.com/uc?export=view&id=1U_FFTpnugkGN_mls5s2kScs8ZQGFmUuH"
+                        class="img-fluid profile-icon" alt="User-Icon">
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <div class="profile-body">
+                            <h1 class="card-title">
+                                <%= "Hello, " + user.username %>
+                            </h1>
+
+                            <p>Your BMI is <%= user.bmi %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <% if (nutrition.length > 0) { %>
+        <div class="row mb-3">
+            <div class="card mb-3 col-lg-8 profile col-sm-12 mx-auto mb-lg-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <div class="profile-body mx-auto p-3">
+                                <p class="card-text mx-auto">Nutritions You gained Today</p>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-auto col-sm-6 mb-sm-2">
+                                        <%= nutrition[0]["calorie"] %>/2000g<br>Calories
+                                    </div>
+                                    <div class="col-md-auto col-sm-6">
+                                        <%= nutrition[1]["protein"] %>/90g<br>Protein
+                                    </div>
+                                    <div class="col-md-auto col-sm-6">
+                                        <%= nutrition[2]["carbs"] %>/350g<br>Carbs
+                                    </div>
+                                    <div class="col-md-auto col-sm-6">
+                                        <%= nutrition[3]["fat"] %>/30g<br>Fat
+                                    </div>
+                                    <div class="col-md-auto col-sm-6">
+                                        <%= nutrition[4]["fiber"] %>/35g<br>Fiber
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <% } %>
+
+    <% if (weightLog.length> 0) { %>
+        <div class="row mb-3">
+            <div class="card mb-3 col-lg-8 profile col-sm-12 mx-auto mb-lg-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <div class="mx-auto p-3 col-lg-10 col-md-11 col-sm-12">
+                                <p class="card-text">Your Weight History</p>
+                                <hr>
+                                <table class="col-12 p-3">
+                                    <tr>
+                                        <th class="text-center px-4 py-2">Date Added</th>
+                                        <th class="text-center px-4 py-2">Weight</th>
+                                    </tr>
+
+                                    <% weightLog.forEach(function (log) { %>
+                                        <tr>
+                                            <td class="text-center px-4 py-2">
+                                                <%= log.date %>
+                                            </td>
+                                            <td class="text-center px-4 py-2">
+                                                <%= log.weight %>
+                                            </td>
+                                        </tr>
+                                        <% }) %>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% } %>
+
+
+
+            <%- include('partials/footer') %>

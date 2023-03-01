@@ -1,0 +1,28 @@
+<%- include("partials/header.ejs") %>
+
+
+    <div class="container col-lg-6 col-md-10 mx-auto">
+        <h1 class="text-center mb-4">Body Mass Index Form (BMI)</h1>
+        <form action="/bmi" method="POST">
+            <div class="form-row row">
+                <div class="col-md-6 mx-auto">
+                    <div class="form-group">
+                        <label for="weight">Weight (kg):</label>
+                        <input type="number" step="any" class="form-control" id="weight"
+                            placeholder="Enter Weight" name="userWeight">
+                    </div>
+                </div>
+                <div class="col-md-6 mx-auto">
+                    <div class="form-group">
+                        <label for="Height">Height (m):</label>
+                        <input type="number" class="form-control" id="Height" placeholder="Enter Height"
+                            name="userHeight" step=".01">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg data-submit">Submit</button>
+        </form>
+    </div>
+
+
+    <%- include("partials/footer.ejs") %>
